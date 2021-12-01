@@ -14,10 +14,10 @@ body{
 }
 
 
-.boxes-wrapper{
+/* .boxes-wrapper{
     max-width: 600px;
     min-width: 370px;
-}
+} */
 .pic{
     direction: flex;
     justify-content: center;
