@@ -5,6 +5,7 @@ body{
     background-color: hsl(210, 46%, 95%);
     font-family:'Barlow Semi Condensed', sans-serif;
     /* font-size: 13px; */
+    margin: 1rem;
 }
 
 .container{
@@ -14,10 +15,7 @@ body{
 }
 
 
-/* .boxes-wrapper{
-    max-width: 600px;
-    min-width: 370px;
-} */
+
 .pic{
     direction: flex;
     justify-content: center;
@@ -63,9 +61,10 @@ body{
     gap: 1.5rem;
 }
 
+
 .boxes-wrapper{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     gap: 1rem;
 }
 
@@ -123,14 +122,48 @@ body{
 } 
 
 
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 /* Desktop Design */
 
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 1200px) {
+
+    
+    
     .boxes-wrapper{
-        max-width: 100%;
-        display: flex;
-        align-self: flex-start;
-        flex-direction: row;
+        display: flex ;
+        /* flex-direction: column; */
+        /* border: 5px solid red; */
+        justify-content: space-between;
     }
 
+    .collection {
+        /* display: flex;
+        flex-direction: row; */
+        /* border: 5px solid blue; */
+        max-width: 75%;
+    }
+
+    .single{
+        width: 25%;
+    }
+
+    .col1{
+        max-width: 30%;
+        
+    }
+
+    .col2{
+        max-width: 70%;
+    }
+
+    .row{
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
